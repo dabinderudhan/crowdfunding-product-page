@@ -1,0 +1,25 @@
+{
+  "name": "crowdfunding-product-page-main",
+  "version": "1.0.0",
+  "description": "Crowdfunding Product Page",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o dist/css src/scss -w",
+    "server": "live-server",
+    "start": "npm-run-all --parallel server scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabinderudhan/crowdfunding-product-page.git"
+  },
+  "author": "Dabinder Udhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dabinderudhan/crowdfunding-product-page/issues"
+  },
+  "homepage": "https://github.com/dabinderudhan/crowdfunding-product-page#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

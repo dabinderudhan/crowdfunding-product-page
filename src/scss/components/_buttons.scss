@@ -1,0 +1,43 @@
+.btn {
+  cursor: pointer;
+  background-color: $color-primary-light;
+  color: $color-white;
+  border: none;
+  border-radius: 50px;
+  padding: 1.2rem 2.8rem;
+
+  &-grey {
+    background-color: $color-neutral-lighter;
+    color: $color-neutral-black;
+    padding-right: 2rem;
+    padding-left: 4rem;
+  }
+
+  &-select {
+    padding: 1rem 2rem;
+    font-weight: $fw-medium;
+  }
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.radiobtn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid $color-neutral-lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &-selected {
+    height: 15px;
+    width: 15px;
+    background-color: $color-primary-light;
+    border-radius: 50%;
+    display: none;
+  }
+}

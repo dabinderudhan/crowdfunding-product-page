@@ -1,0 +1,33 @@
+body {
+  font-family: $ff-default;
+  font-size: $fs-default;
+  font-weight: $fw-default;
+  color: $color-neutral-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fw-bold;
+  color: $color-neutral-black;
+}
+
+p {
+  line-height: 1.5;
+  font-size: $fs-default;
+}
+
+button,
+input {
+  font-family: $ff-default;
+  font-size: $fs-default;
+  font-weight: $fw-bold;
+  color: $color-white;
+}
+
+input {
+  color: $color-neutral-black;
+}

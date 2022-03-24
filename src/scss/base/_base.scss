@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+  gap: 2rem;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: $ff-default;
+  font-size: $fs-default;
+  color: inherit;
+}
+
+// show nav list in mobile desktop
+.show-nav {
+  & .hero-nav--list {
+    display: flex;
+  }
+
+  & .hero-nav--btn_open {
+    display: none;
+  }
+
+  & .hero-nav--btn_close {
+    display: block;
+  }
+}
+
+/////////////////////////
+// OVERLAY
+/////////////////////////
+.overlay {
+  & .section-cards_container--card_name {
+    & h4 {
+      color: $color-neutral-light;
+    }
+
+    & p {
+      color: $color-primary-lighter;
+    }
+  }
+
+  & .section-cards_container--card_text {
+    color: $color-neutral-medium;
+  }
+
+  & .section-cards_container--card_btn {
+    &-left {
+      color: $color-neutral-medium;
+
+      & span {
+        color: $color-neutral-light;
+      }
+    }
+
+    &-select {
+      background-color: $color-neutral-medium;
+
+      &:hover {
+        background-color: $color-neutral-medium;
+      }
+    }
+  }
+}
+
+.overlay-body {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100000;
+  display: none;
+}
+
+.bookmarked {
+  // content: url("../../src/images/icon-bookmarked.svg");
+  & circle {
+    fill: $color-primary-dark;
+  }
+
+  & path {
+    fill: $color-white;
+  }
+}
+
+// .hide-radiobtn_selected {
+//   & .radiobtn-selected {
+//     display: none;
+//   }
+// }
+
+.show-radiobtn_selected {
+  display: block !important;
+}
+
+.show-pledge {
+  display: flex !important;
+}
+
+.add-dark_border {
+  border: 2px solid $color-primary-light !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 45.75rem; // 732px;
+    padding-inline: 0;
+  }
+
+  .bookmarked {
+    & circle {
+      fill: $color-primary-dark;
+    }
+
+    & path {
+      fill: $color-white;
+    }
+
+    & button {
+      color: $color-primary-dark;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+$color-primary-light: hsl(176, 50%, 47%);
+$color-primary-lighter: hsl(176, 50%, 67%);
+$color-primary-dark: hsl(176, 72%, 28%);
+
+$color-neutral-black: hsl(0, 0%, 0%);
+$color-neutral-light: hsl(0, 0%, 48%);
+$color-neutral-medium: hsl(0, 0%, 68%);
+$color-neutral-lighter: hsl(0, 0%, 88%);
+$color-neutral-lightest: hsl(0, 0%, 95%);
+$color-white: hsl(255, 255%, 255%);
+
+$fs-default: 1rem;
+
+$ff-default: "Commissioner", sans-serif;
+
+$fw-default: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$filter-primary-dark: brightness(0) saturate(100%) invert(33%) sepia(97%)
+  saturate(356%) hue-rotate(127deg) brightness(96%) contrast(94%);
